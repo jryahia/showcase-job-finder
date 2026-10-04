@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Job Finder | Case Study</title>
+<meta name="description" content="Self-hosted job aggregator: one search across 16+ remote-job sources, plus fit scoring, a shortlist, outreach tools and a live feed.">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--fg:#e6edf3;--mut:#8b949e;--acc:#f97316}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 "Segoe UI",Helvetica,Arial,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:56px 16px 80px}
+a{color:var(--acc)}h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin:0 0 12px}
+h2{font-size:22px;margin:56px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.kicker{color:var(--acc);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+.lead{font-size:19px;color:var(--mut);max-width:760px}
+.note{border:1px solid var(--line);border-left:4px solid var(--acc);background:var(--card);padding:14px 18px;border-radius:8px;margin:28px 0}
+.hero{width:100%;border-radius:12px;border:1px solid var(--line);margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--card);padding:5px 12px;border-radius:999px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;padding:0;list-style:none}
+.grid li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+ol li{margin:6px 0}.arch{width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
+figure{margin:0 0 28px}figure img{width:100%;border-radius:10px;border:1px solid var(--line)}
+figcaption{color:var(--mut);font-size:14px;margin-top:6px}
+footer{margin-top:64px;color:var(--mut);font-size:14px;border-top:1px solid var(--line);padding-top:20px}
+</style></head><body><main>
+<div class="kicker">Case study &middot; Private project</div>
+<h1>Job Finder</h1>
+<p class="lead">Self-hosted job aggregator: one search across 16+ remote-job sources, plus fit scoring, a shortlist, outreach tools and a live feed.</p>
+<div class="note"><strong>This is a proprietary project. Source code is private. This page showcases the system&#x27;s architecture and results.</strong></div>
+<img class="hero" src="assets/home_desktop.png" alt="One search across every source">
+<h2>Problem it solves</h2><p>Remote job listings are scattered across boards, RSS feeds and company ATS pages. This local-first tool aggregates them into one searchable feed and adds tools to shortlist, track and act on the right ones.</p>
+<h2>Architecture</h2><img class="arch" src="assets/architecture.svg" alt="Architecture diagram"><ol><li>Sources are fetched through APIs, RSS, ATS endpoints and scrapers.</li><li>Listings are normalized into one local SQLite store.</li><li>Search, filters and fit scoring rank the results.</li><li>Shortlisted roles move into outreach and application tracking.</li></ol>
+<h2>Key features</h2><ul class="grid"><li>16+ sources in one feed</li><li>Salary, level, recency and type filters</li><li>Fit scoring and ranked shortlist</li><li>Scraper lab for new sources</li><li>Local-first: data stays on the machine</li></ul>
+<h2>Tech stack</h2><ul class="chips"><li>Python</li><li>FastAPI</li><li>SQLite</li><li>httpx</li><li>Playwright</li></ul>
+<h2>What it does in practice</h2><ul><li>Replaces checking a dozen boards with one local search.</li></ul>
+<h2>Screenshots</h2><figure><img src="assets/home_desktop.png" alt="One search across every source" loading="lazy"><figcaption>One search across every source</figcaption></figure><figure><img src="assets/sources.png" alt="Source overview" loading="lazy"><figcaption>Source overview</figcaption></figure><figure><img src="assets/shortlist.png" alt="Fit-scored shortlist" loading="lazy"><figcaption>Fit-scored shortlist</figcaption></figure><figure><img src="assets/freelance.png" alt="Freelance marketplaces hub" loading="lazy"><figcaption>Freelance marketplaces hub</figcaption></figure>
+<footer>Built by <a href="https://github.com/jryahia">Yahya Jarray</a> &middot;
+<a href="mailto:yahiajarray43@gmail.com">yahiajarray43@gmail.com</a> &middot;
+<a href="https://github.com/jryahia/showcase-job-finder">Repository</a></footer>
+</main></body></html>
