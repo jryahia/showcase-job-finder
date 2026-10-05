@@ -39,6 +39,8 @@ Remote job listings are scattered across boards, RSS feeds and company ATS pages
 
 ## Screenshots
 
+> Screenshots show the app running on seeded demo data, not client data.
+
 **One search across every source**
 
 ![One search across every source](assets/home_desktop.png)
